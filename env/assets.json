@@ -1,0 +1,39 @@
+{
+ "repo": "tester170/skyscapes-segformer-b0",
+ "tag": "v1.0",
+ "release": {
+  "model": {
+   "name": "segformer_b0_skyscapes_ep220.pth",
+   "size": 14967942,
+   "sha256": "b8c97a5a6004edb2e05a957f6989f0a9c3f10a798341c3bb8f1662c822073e5e"
+  },
+  "encoder": {
+   "name": "mit_b0_loveda_encoder.pth",
+   "size": 13333226,
+   "sha256": "feef304053335d65c3663c465bff0f367a15b6fdb1a34bd3973a3683f2ae738a"
+  },
+  "mmcv": {
+   "name": "mmcv-2.1.0-cp311-cp311-manylinux1_x86_64.whl",
+   "size": 323304127,
+   "sha256": "1f973d965e3190072cb289d75879c0e02efd6b251aca66a3055acc56ef078b9c"
+  },
+  "dataset": {
+   "name": "data_dense.zip",
+   "size": 151311568,
+   "sha256": "11664288ab01a20e30fdf19334b710af17ea0e8eb39f8c9d47b4b051da58b010"
+  }
+ },
+ "mmcv_official": "https://download.openmmlab.com/mmcv/dist/cu121/torch2.1.0/mmcv-2.1.0-cp311-cp311-manylinux1_x86_64.whl",
+ "dataset_official": {
+  "url": "https://pba-freesoftware.eoc.dlr.de/SkyScapes.zip",
+  "name": "SkyScapes.zip",
+  "size": 287938191,
+  "sha256": "f786046ea4b0c5b09fc38cfffa668f60c9c5a5258b7df5a204d2f63ea7d05bd6",
+  "inner": "ZIP/SS_Dense.zip"
+ },
+ "encoder_source": {
+  "url": "https://huggingface.co/Pranilllllll/geonusaf-segformer-b0-loveda-both-v3-slide/resolve/main/best.pt",
+  "sha256": "8345b59487a35c1cb68260e976452eb9e2a968c9d52eaf4758c924f5bd057809",
+  "digest": "019760d019728a2c18fc4555200c17687c8cc0b60457782b0732b66112df2916"
+ }
+}
