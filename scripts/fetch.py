@@ -63,7 +63,7 @@ def download(url, dst, expected=None, tries=3):
         except Exception as e:  # noqa: BLE001
             print(f'  attempt {attempt}/{tries} failed: {e}', flush=True)
             part.unlink(missing_ok=True)
-            if attempt == tries:
+            if attempt == tries or 400 <= getattr(e, 'code', 0) < 500:   # missing file: no point in retrying
                 raise
             time.sleep(5 * attempt)
 
